@@ -136,3 +136,37 @@ li{
     display: flex;
     justify-content: space-around;
 }
+.leftBottomSliderSection{
+    width: 368px;
+    height: 487px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.article{
+    font-size: 36px;
+}
+.camping{
+    font-size: 24px;
+}
+.dusty{
+    font-size: 14px;
+}
+.read{
+    width: 155px;
+    height: 48px;
+    background-color: #FFEB00;
+    border: none;
+}
+.stick{
+    width: 84px;
+    height: 2px;
+    background-color: #FFE900;
+}
+.rightBottomSliderSection{
+    width: 716px;
+    height: 487px;
+}
+.bottomSliderSection{
+    display: flex;
+}
