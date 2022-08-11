@@ -329,4 +329,41 @@ li{
     background-color: #202020;
     color: white;
     border: none;
+    margin-bottom: 100px;
+}
+/* six section */
+.want{
+    width: 1084px;
+    height: 204px;
+    margin: 0 auto;
+    display: flex;
+}
+.view{
+    width: 348px;
+    height: 204px;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mail h2{
+    font-size: 40px;
+    padding-left: 30px;
+}
+.mail p{
+    font-size: 14px;
+    padding-left: 30px;
+}
+.signMail{
+    padding-left: 30px;
+}
+.signMail input{
+    height: 48px;
+    width: 236px;
+}
+.signMail button{
+    padding: 14px 25px;
+    background-color: #202020;
+    color: white;
 }
