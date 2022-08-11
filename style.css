@@ -367,3 +367,34 @@ li{
     background-color: #202020;
     color: white;
 }
+/* footer */
+footer{
+    width: 100%;
+    height: 234px;
+    background-color: #202020;
+    margin-top: 100px;
+}
+.social{
+    background-color: white;
+    width: 144px;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.topFooter{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+.footerLi{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+footer p {
+    padding-left: 120px;
+    padding-top: 50px;
+    font-size: 14px;
+    color: #909090;
+}
