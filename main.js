@@ -81,36 +81,69 @@ const getInfo = async () => {
 
 getInfo();
 
-window.addEventListener("scroll",function(){
-    if(document.documentElement.scrollTop>=300){
-        section3.style.marginLeft="5%"
-    }
-})
+
 
 //header li changes color
-function changeColor(){
+function changeColor() {
     var li = document.querySelector(".liHeader").style.color = "red"
 }
-function backColor(){
+function backColor() {
     var li = document.querySelector(".liHeader").style.color = ""
 }
 
-function changeColor1(){
+function changeColor1() {
     var li = document.querySelector(".liHeader1").style.color = "green"
 }
-function backColor1(){
+function backColor1() {
     var li = document.querySelector(".liHeader1").style.color = ""
 }
 
-function changeColor2(){
+function changeColor2() {
     var li = document.querySelector(".liHeader2").style.color = "blue"
 }
-function backColor2(){
+function backColor2() {
     var li = document.querySelector(".liHeader2").style.color = ""
 }
-function changeColor3(){
+function changeColor3() {
     var li = document.querySelector(".liHeader3").style.color = "orange"
 }
-function backColor3(){
+function backColor3() {
     var li = document.querySelector(".liHeader3").style.color = ""
+}
+
+//change background img and text on hover
+function change() {
+    let zealandBackground = document.querySelector(".zealandBackground").style.backgroundImage = "url(./images/dingo.jpg)"
+    let newClimbing = document.querySelector(".newClimbing").innerHTML = "Running Dingo"
+}
+function notChange() {
+    let zealandBackground = document.querySelector(".zealandBackground").style.backgroundImage = ""
+    let newClimbing = document.querySelector(".newClimbing").innerHTML = "Climbing New Zealand"
+}
+
+//email validation
+function validateForm()
+
+{
+
+var x=document.forms["testForm"]["email"].value;
+
+var atpos=x.indexOf("@");
+
+var dotpos=x.lastIndexOf(".");
+
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+
+{
+
+alert("Please enter a valid email address.");
+
+return false;
+
+} else{
+    alert("Success!!!")
+
+    return false
+}
+
 }

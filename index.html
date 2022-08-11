@@ -86,7 +86,7 @@
             <div class="stickZealand"></div>
             <div class="zealandBackground">
                 <div class="zealandAdventures">
-                    <h2>Climbing New Zealand</h2>
+                    <h2 class="newClimbing">Climbing New Zealand</h2>
                     <p>Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come
                         join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary.
                     </p>
@@ -95,7 +95,7 @@
             </div>
             <div class="places">
                 <h3>Where do you want to go?</h3>
-                <div class="boxPlace">
+                <div class="boxPlace" onmouseover="change()" onmouseout="notChange()">
                     <div class="bike">
                         <img src="./images/bike.png" alt="bike">
                         <h4>WHISTLER MOUNTAIN BIKING</h4>
@@ -126,35 +126,37 @@
                     <p>Be the first to know about new trips, fresh gear, and co-op offers. We’re a good penpal. Promise.
                     </p>
                     <div class="signMail">
-                        <input type="text" placeholder="YOUR EMAIL ADRESS">
-                        <button class="signUp">SIGN UP</button>
+                        <form name= "testForm" action= "test_form.asp" onsubmit= "return validateForm();" method= "post">
+                            <input type="text" name="email" placeholder="YOUR EMAIL ADRESS">
+                            <button class="signUp">SIGN UP</button>
+                        </form>
                     </div>
                 </div>
             </div>
             <footer>
-               <div class="topFooter">
-                <img src="./images/logo1.png" alt="logo">
-                <ul class="footerLi">
-                    <li>MAGAZINE</li>
-                    <li>ADVENTURES</li>
-                    <li>FAQ</li>
-                    <li>ABOUT US</li>
-                </ul>
-                <div class="social">
-                    <a href="https://www.instagram.com/">
-                        <img src="./images/instagram.png" alt="instagram">
-                    </a>
-                    <a href="https://www.facebook.com/">
-                        <img src="./images/facebook.png" alt="facebook">
-                    </a>
-                    <a href="https://twitter.com/?lang=en">
-                        <img src="./images/twitter.png" alt="twitter">
-                    </a>
+                <div class="topFooter">
+                    <img src="./images/logo1.png" alt="logo">
+                    <ul class="footerLi">
+                        <li>MAGAZINE</li>
+                        <li>ADVENTURES</li>
+                        <li>FAQ</li>
+                        <li>ABOUT US</li>
+                    </ul>
+                    <div class="social">
+                        <a href="https://www.instagram.com/">
+                            <img src="./images/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <img src="./images/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://twitter.com/?lang=en">
+                            <img src="./images/twitter.png" alt="twitter">
+                        </a>
+                    </div>
                 </div>
-               </div>
-               <p>
-                Ⓒ 2019, WKND Demo Site. Intended only as a demonstration of Adobe Experience Manager
-               </p>
+                <p>
+                    Ⓒ 2019, WKND Demo Site. Intended only as a demonstration of Adobe Experience Manager
+                </p>
             </footer>
         </div>
 
