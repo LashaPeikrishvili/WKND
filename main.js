@@ -66,22 +66,12 @@ const getInfo = async () => {
             let p2 = document.createElement("p")
             card.append(image, p1, p2)
             image.setAttribute("src", item.img)
-            image.classList.add("grid-image")
+            image.classList.add("photo")
             p1.innerHTML = item.txt1;
             p2.innerHTML = item.txt2;
             p2.style.marginTop = "40px"
             p1.style.marginTop = "20px"
 
-            // let box = document.createElement(".div")
-            // document.querySelector(".apiBox").appendChild(box)
-            // box.classList.add("box")
-            // box.style.display = "flex"
-            // box.style.justifyContent = 'space-between'
-            // box.style.width = '400px'
-            // box.style.backgroundColor = 'pink'
-            // box.style.margin = '5px'
-            // let text1 = document.createElement("p")
-            // text1.innerText = newInfo.txt1[0]
         })
     } catch (error) {
         console.log(error);
@@ -96,24 +86,3 @@ window.addEventListener("scroll",function(){
         section3.style.marginLeft="5%"
     }
 })
-// let data = await fetch("./api.json").then((Response)=>Response.json()).then((json)=>{data=json})
-// console.log(data);
-
-// let section3=document.querySelector(".section3")
-
-
-// data.map((item)=>{
-//     let card=document.createElement("div")
-//     section3.appendChild(card)
-    // let image=document.createElement("img")
-    // let p1=document.createElement("p")
-    // let p2=document.createElement("p")
-    // card.append(image,p1,p2)
-    // image.setAttribute("src", item.img)
-    // image.classList.add("grid-image")
-    // p1.innerHTML=item.txt1;
-    // p2.innerHTML=item.txt2;
-    // p2.style.marginTop="40px"
-    // p1.style.marginTop="20px"
-
-// })
