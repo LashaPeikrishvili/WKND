@@ -86,3 +86,31 @@ window.addEventListener("scroll",function(){
         section3.style.marginLeft="5%"
     }
 })
+
+//header li changes color
+function changeColor(){
+    var li = document.querySelector(".liHeader").style.color = "red"
+}
+function backColor(){
+    var li = document.querySelector(".liHeader").style.color = ""
+}
+
+function changeColor1(){
+    var li = document.querySelector(".liHeader1").style.color = "green"
+}
+function backColor1(){
+    var li = document.querySelector(".liHeader1").style.color = ""
+}
+
+function changeColor2(){
+    var li = document.querySelector(".liHeader2").style.color = "blue"
+}
+function backColor2(){
+    var li = document.querySelector(".liHeader2").style.color = ""
+}
+function changeColor3(){
+    var li = document.querySelector(".liHeader3").style.color = "orange"
+}
+function backColor3(){
+    var li = document.querySelector(".liHeader3").style.color = ""
+}
