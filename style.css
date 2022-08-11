@@ -257,3 +257,76 @@ li{
     background-color: #FFEB00;
     border: none;
 }
+/* fifth section */
+.places{
+    margin-top: 50px;
+}
+.places h3{
+    font-size: 24px;
+    margin-bottom: 50px;
+    padding-left: 110px;
+}
+.boxPlace{
+    width: 1084px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.boxPlace h4{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.boxPlace p{
+    font-size: 10px;
+    color: #909090;
+}
+.bike{
+    width: 256px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bike img{
+    width: 100%;
+}
+.surf{
+    width: 256px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.surf img{
+    width: 100%;
+}
+.skiing{
+    width: 256px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.skiing img{
+    width: 100%;
+}
+.river{
+    width: 256px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.river img{
+    width: 100%;
+}
+.places button{
+    margin-top: 20px;
+    margin-left: 130px;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #202020;
+    color: white;
+    border: none;
+}
