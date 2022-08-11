@@ -160,7 +160,7 @@ li{
 }
 .stick{
     width: 84px;
-    height: 2px;
+    height: 3px;
     background-color: #FFE900;
 }
 .rightBottomSliderSection{
@@ -169,4 +169,35 @@ li{
 }
 .bottomSliderSection{
     display: flex;
+}
+/* third section */
+.apisSection{
+    width: 1084px;
+    margin: 0 auto;
+}
+.recent{
+    font-size: 36px;
+    margin-top: 100px;
+}
+.stickApi{
+    margin-top: 30px;
+    width: 84px;
+    height: 3px;
+    background-color: #FFE900;
+}
+.cardBox{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    margin: 70px auto;
+    justify-content: center;
+    grid-gap: 20px;
+    /* margin-left: -100vw; */
+    transition: all 2s linear;
+
+}
+
+.grid-image{
+    width: 100%;
+    height: 200px;
 }
