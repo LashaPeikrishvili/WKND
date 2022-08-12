@@ -147,3 +147,13 @@ return false;
 }
 
 }
+
+//hidden div
+function myHiddenDiv(){
+    let x = document.querySelector(".hidden")
+    if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+}

@@ -16,7 +16,7 @@
             <div class="topHeader">
                 <a class="accountIcon" href="#">
                     <img class="userIcon" src="./images/userIcon.png" alt="user">
-                    <p class="account">ACCOUNT</p>
+                    <p class="account" onclick="myHiddenDiv()">ACCOUNT</p>
                 </a>
             </div>
             <div class="bottomHeader">
@@ -36,6 +36,15 @@
 
         </header>
         <div class="adventures">
+            <div class="hidden">
+                <form class="hiddenForm" action="">
+                    <label for="firstName">Please enter your first name</label><br>
+                    <input type="text" id="firstName"><br>
+                    <label for="hiddenMail">Please enter your Email</label><br>
+                    <input type="text" id="hiddenMail"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
             <div class="wkndAdventures">
                 <h2>WKND Adventures</h2>
                 <p>Join us on one of our next adventures. Browse our list of curated experiences and sign up for one
