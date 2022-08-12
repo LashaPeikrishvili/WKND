@@ -72,6 +72,7 @@ const getInfo = async () => {
             p2.style.marginTop = "40px"
             p1.style.marginTop = "20px"
 
+            
         })
     } catch (error) {
         console.log(error);
@@ -81,6 +82,21 @@ const getInfo = async () => {
 
 getInfo();
 
+
+// const myBoxes = document.querySelector(".cardBox")
+// window.addEventListener('scroll', boxAnimation)
+
+// function boxAnimation() {
+//     const bottomTrigger =  (window.innerHeight / 5) * 4
+//     myBoxes.forEach(box => {
+//        const boxTop = box.getBoundingClientRect().top;
+//        if(boxTop < bottomTrigger){
+//         box.classList.add('reveal')
+//        }else{
+//         box.classList.remove('reveal')
+//        }
+//     })
+// }
 
 
 //header li changes color
@@ -122,38 +138,34 @@ function notChange() {
 }
 
 //email validation
-function validateForm()
+function validateForm() {
 
-{
+    var x = document.forms["testForm"]["email"].value;
 
-var x=document.forms["testForm"]["email"].value;
+    var atpos = x.indexOf("@");
 
-var atpos=x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
 
-var dotpos=x.lastIndexOf(".");
+    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
 
-if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+        alert("Please enter a valid email address.");
 
-{
+        return false;
 
-alert("Please enter a valid email address.");
+    } else {
+        alert("Success!!!")
 
-return false;
-
-} else{
-    alert("Success!!!")
-
-    return false
-}
+        return false
+    }
 
 }
 
 //hidden div
-function myHiddenDiv(){
+function myHiddenDiv() {
     let x = document.querySelector(".hidden")
     if (x.style.display === "block") {
         x.style.display = "none";
-      } else {
+    } else {
         x.style.display = "block";
-      }
+    }
 }

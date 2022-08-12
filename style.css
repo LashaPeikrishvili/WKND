@@ -205,16 +205,21 @@ li{
     height: 3px;
     background-color: #FFE900;
 }
+.mainCardBox{
+    overflow-x: hidden;
+}
 .cardBox{
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,300px);
-    margin: 70px auto;
-    justify-content: center;
-    grid-gap: 20px;
-    /* margin-left: -100vw; */
-    transition: all 2s linear;
-
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 100px auto;
+    transform: translateX(300%);
+}
+.cardBox:nth-of-type(odd){
+    transform: translateX(-300%);
+}
+.cardBox.reveal{
+    transform: translateX(0);
 }
 
 .photo{
