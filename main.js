@@ -71,7 +71,6 @@ const getInfo = async () => {
             p2.innerHTML = item.txt2;
             p2.style.marginTop = "40px"
             p1.style.marginTop = "20px"
-
             
         })
     } catch (error) {
